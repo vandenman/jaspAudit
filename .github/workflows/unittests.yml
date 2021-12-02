@@ -29,7 +29,7 @@ jobs:
         with:
           r-version: ${{ matrix.config.r }}
 
-      - uses: jasp-stats/jasp-actions/setup-test-env@master
+      - uses: vandenman/jasp-actions/setup-test-env@linux_multiple_repos
 
       - name: Run unit tests
         run: source("tests/testthat.R")
